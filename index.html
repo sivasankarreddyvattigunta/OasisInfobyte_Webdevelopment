@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="items-center justify-center min-h-screen bg-gray-100">
+  <script>
+    function updateClock(birthdate) {
+      const now = new Date();
+      const birth = new Date(birthdate);
+      const diff = now - birth;
+
+      const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+      const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('timeSinceBirth').innerText = `Age: ${years} years ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+    }
+
+    const birthdate = '2004-01-01';
+    setInterval(() => {
+      updateClock(birthdate);
+    }, 1000);
+  </script>
+  <div class="py-4 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Vattigunta Siva Sankar Reddy</h1>
+  </div>
+  <div class="flex justify-between w-full px-10 py-5 bg-purple-900 tems-center ">
+    <div class="text-white ">
+    <h1 class="mr-4 text-3xl text-lime-200 hover:cursor-pointer">Personal Details</h1>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">Fathers name: Vattigunta Rami Reddy (late)</h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">Mothers name: Vattigunta Padmavathi</h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">Date of birth: 01/01/2004</h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">Address: Guntur, Andhra Pradesh-522005</h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">E-mail: sivasankarreddyvattigunta@gmail.com</h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">Phone: +91 8688505716</h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">LinkedIn: <a href="www.linkedin.com/in/sivasankarreddyvattigunta" class="hover:underline">www.linkedin.com/in/sivasankarreddyvattigunta</a></h3>
+    <h3 class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl">Github: <a href="https://github.com/sivasankarreddyvattigunta" class="hover:underline">https://github.com/sivasankarreddyvattigunta</a></h3>
+    <div id="timeSinceBirth" class="text-xl transition-all duration-1000 hover:text-lime-600 hover:cursor-pointer hover:text-2xl"></div>
+  </div>
+    <img src="siva_pic.jpg" alt="Rounded Photo" class="object-cover w-40 h-40 transition-all duration-1000 rounded-full hover:w-48 hover:h-48 hover:custom-shadow">
+  </div>
+
+
+  <div class="px-10 py-5 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Professional Summary</h1>
+    <p class="text-white">
+      As a versatile and committed developer, I aim to leverage my expertise in developing reusable, maintainable cross-platform frontend web application components to contribute effectively to innovative projects. With a strong focus on adhering to web and team standards, writing comprehensive unit tests, and constantly improving frontend performance, I strive to deliver high-quality solutions. My goal is to work collaboratively with mentors, team members, and stakeholders, ensuring accurate progress tracking, effective communication, and seamless integration of web application functionality. I am dedicated to advancing the frontend technology stack, supporting business goals through creative and technical collaboration.
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-900">
+    <h1 class="text-3xl text-center text-lime-200 hover:cursor-pointer">Technical Competencies</h1>
+    <p class="text-white">
+      Javascript | Reactjs | Solidity | DBMS | HTML | CSS | Blockchain technology | Agile | Jira | C++
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Interpersonal Skills</h1>
+    <p class="text-white">
+      Critical Thinking | Decision Making | Problem Solving
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-900">
+    <h1 class="text-3xl text-center text-lime-200 hover:cursor-pointer">Education</h1>
+    <p class="text-white">
+      Bachelors in Computer Science Engineering | Chandigarh University, Gharuan <br>
+      Session: 2021-2025 | Score: 8.5 CGPA <br><br>
+
+      Intermediate (BIEAP) | Future Focus Junior College, Guntur <br>
+      Session: 2019-2021 | Percentage: 96% <br><br>
+
+      Matriculation (BSCAP) | St.Xaviers Public School, Guntur <br>
+      Session: 2018-2019 | CGPA: 10
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Projects</h1>
+    <p class="text-white">
+      Trustock - a Decentralized Exchange | Aug-Dec 2023 <br>
+      Skills used: Python, React.js, Blockchain Technology <br>
+      - Developed a smart contract in Solidity for IPOs creation <br>
+      - Designed the app for performing transactions in terms of Eth coin and can be connected with Wallet <br><br>
+
+      Minting NFTs by creating Custom Candy Machine in Solana <br>
+      Skills used: Solana, Front End Development, Linux, Blockchain Technology <br>
+      - Developed a candy machine to mint NFTs by connecting to Phantom Wallet
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-900">
+    <h1 class="text-3xl text-center text-lime-200 hover:cursor-pointer">Internship</h1>
+    <p class="text-white">
+      Web Development Internship | Jun-2024-present <br>
+      OASIS Infobyte <br>
+      - Collaborating on the development of high-quality web applications while enhancing technical skills. <br>
+      - Contributing to team projects and supporting innovative web solutions
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Academic Achievements</h1>
+    <p class="text-white">
+      - School topper in matriculation and Intermediate
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-900">
+    <h1 class="text-3xl text-center text-lime-200 hover:cursor-pointer">Certifications & Awards</h1>
+    <p class="text-white">
+      - Javascript for Beginners | Codechef <br>
+      - Front End Web Development | Udemy <br>
+      - Programming, Data Structures, and Algorithms in Python | NPTEL <br>
+      - Create Ethereum and Blockchain Applications Using Solidity | Infosys Spring Board
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Extra Curricular & Co-Curricular Achievements</h1>
+    <p class="text-white">
+      - Served as SPL in school, regulated several programs
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-900">
+    <h1 class="text-3xl text-center text-lime-200 hover:cursor-pointer">Interests & Hobbies</h1>
+    <p class="text-white">
+      - Playing Chess and Cricket <br>
+      - Writing
+    </p>
+  </div>
+
+  <div class="px-10 py-5 bg-purple-700">
+    <h1 class="text-3xl text-center text-white transition-all duration-700 ease-in-out hover:text-slate-300 hover:text-5xl hover:translate-x-10 hover:cursor-pointer">Trainings</h1>
+    <p class="text-white">
+      Metacrafters | Jun-Aug 2023 <br>
+      - Learnt about Ethereum, Avalanche, Polygon
+    </p>
+  </div>
+</body>
+</html>
+
